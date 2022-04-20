@@ -1,14 +1,15 @@
-#README
+README
+=====
 
-##About The Project
+About The Project
+------
 
----
 This project aims as a training to conduct automation tests using Selenium by implementing
 Page Object Model as a design pattern. Because, POM is a design pattern that has an 
 object-oriented class orientation that focuses on the page we are testing.
 
 
-###The advantages using POM:
+### The advantages using POM:
 - If there is a change in the UI on the page, then we as testers do not need to change the entire code,
   we can simply change the locators value without doing any duplication on code that will consume us lots of time
   and maintenance efforts.
@@ -25,18 +26,17 @@ avoided by applying the Dependency Inversion Principle.
 to perform an action on the page class (Open-Closed Principle).
 
 
-##How To Run
-
----
+How To Run
+------
 
 1. Open the CucumberRunner inside test > java > tests. Choose Tag Expression from .feature file that you want to run
 2. Simply click run the test on line 16.
 3. Alternatively you could directly run it but make sure you choose CucumberRunner as a runner
 
 
-##Depedency
+Depedency
+------
 
----
 1. Project Lombok = it is used to simply declare getter and setter with creating it
 2. Selenium = Web Automation framework
 3. webdrivermanager = to handle web driver (Firefox, Chrome, Safari etc)
@@ -45,9 +45,9 @@ to perform an action on the page class (Open-Closed Principle).
 6. Cucumber = BDD framework, to translate business approach into automation code
 
 
-##How to Install
+How to Install
+------
 
----
 - Project Lombok
    1. Go to Plugin on Intellij, search for Lombok
    2. Install project Lombok
