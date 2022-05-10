@@ -4,13 +4,13 @@ README
 About The Project
 ------
 
----
 This project aims as a training to conduct automation tests using Selenium by implementing
 Page Object Model as a design pattern. Because, POM is a design pattern that has an 
 object-oriented class orientation that focuses on the page we are testing.
 
 
 ### The advantages using POM:
+
 - If there is a change in the UI on the page, then we as testers do not need to change the entire code,
   we can simply change the locators value without doing any duplication on code that will consume us lots of time
   and maintenance efforts.
@@ -38,8 +38,7 @@ How To Run
 Depedency
 ------
 
----
-1. Project Lombok = it is used to simply declare getter and setter with creating it
+1. Project Lombok = it is used to simply declare getter and setter without creating it
 2. Selenium = Web Automation framework
 3. webdrivermanager = to handle web driver (Firefox, Chrome, Safari etc)
 4. snakeyaml = to handle a credential for every environment
@@ -50,7 +49,6 @@ Depedency
 How to Install
 ------
 
----
 - Project Lombok
    1. Go to Plugin on Intellij, search for Lombok
    2. Install project Lombok
