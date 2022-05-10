@@ -4,5 +4,8 @@ public interface ProductDetailPageWeb {
 
     boolean isOnPage();
     String getProductName();
-    void clickBuyNow();
+    String getProductPrice();
+    void clickAddToCard();
+    String isProductAdded();
+    void clickCheckoutCart();
 }

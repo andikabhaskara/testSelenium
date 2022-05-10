@@ -9,27 +9,27 @@ public class UserHomeImpWeb extends WebBasePageObject implements UserHomePageWeb
 
     @Override
     public boolean isOnPage() {
-        return waitElement(USER_PROFILE_AVATAR,30).isDisplayed();
+        return waitElement(SHOPPING_TITLE_TEXT,30).isDisplayed();
     }
 
     @Override
-    public String myLearningText() {
-        return getText(MY_LEARNING_TEXT);
+    public String shoppingTitleText() {
+        return getText(SHOPPING_TITLE_TEXT);
     }
 
     @Override
-    public void searchProduct(String productName) {
-        type(INPUT_SEARCHBAR, productName);
+    public void sortProduct(String sortName) {
+        selectByVisibilityText(SELECT_SORT_PRODUCT, sortName);
     }
 
     @Override
-    public String productIsInputted() {
-        return getValue(INPUT_SEARCHBAR);
+    public String productResult() {
+        return getText(FIRST_PRODUCT);
     }
 
     @Override
-    public void clickSearch() {
-        click(SEARCH_BUTTON);
+    public void clickFirstProduct() {
+        click(FIRST_PRODUCT);
     }
 
 }

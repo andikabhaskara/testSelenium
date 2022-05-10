@@ -4,25 +4,13 @@ public interface CheckoutPageWeb {
 
     boolean isOnPage();
 
-    String checkOutText();
+    String getCheckoutInfoText();
 
-    void selectIndonesiaCountry(String country);
+    void inputFirstName(String firstName);
 
-    void selectCreditDebitCardPayment();
+    void inputLastName(String lastName);
 
-    void inputDetailCard(String cardName, String cardNo, String cvvNo, String expCard);
+    void inputZipCode(String zipCode);
 
-    String getCardName();
-
-    String getCardNumber();
-
-    String getCvvNo();
-
-    String getExpCard();
-
-    void uncheckSaveCard();
-
-    void clickFinishCheckout();
-
-    String getErrorMessageCheckout();
+    void clickContinueButton();
 }

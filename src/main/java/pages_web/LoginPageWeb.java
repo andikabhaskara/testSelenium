@@ -6,7 +6,7 @@ public interface LoginPageWeb {
 
     String getTitlePage();
 
-    void loginToUdemy();
+    void loginToWebsite();
 
     void clickLoginButton();
 }

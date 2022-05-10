@@ -9,7 +9,7 @@ public class ProductDetailImpWeb extends WebBasePageObject implements ProductDet
 
     @Override
     public boolean isOnPage() {
-        return waitElement(PRODUCT_TITLE_NAME, 30).isDisplayed();
+        return waitElement(PRODUCT_TITLE_NAME, 30).isDisplayed() & waitElement(ADD_TO_CART_BUTTON, 30).isDisplayed();
     }
 
     @Override
@@ -18,7 +18,22 @@ public class ProductDetailImpWeb extends WebBasePageObject implements ProductDet
     }
 
     @Override
-    public void clickBuyNow() {
-        click(BUY_NOW_BUTTON);
+    public String getProductPrice() {
+        return getText(PRODUCT_PRICE_NAME);
+    }
+
+    @Override
+    public void clickAddToCard() {
+        click(ADD_TO_CART_BUTTON);
+    }
+
+    @Override
+    public String isProductAdded() {
+        return getText(CART_IS_FILLED_ICON);
+    }
+
+    @Override
+    public void clickCheckoutCart() {
+        click(CART_ICON);
     }
 }

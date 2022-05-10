@@ -1,8 +1,8 @@
 #README
 
-##About The Project
+About The Project
+------
 
----
 This project aims as a training to conduct automation tests using Selenium by implementing
 Page Object Model as a design pattern. Because, POM is a design pattern that has an 
 object-oriented class orientation that focuses on the page we are testing.
@@ -37,7 +37,7 @@ to perform an action on the page class (Open-Closed Principle).
 ##Depedency
 
 ---
-1. Project Lombok = it is used to simply declare getter and setter with creating it
+1. Project Lombok = it is used to simply declare getter and setter without creating it
 2. Selenium = Web Automation framework
 3. webdrivermanager = to handle web driver (Firefox, Chrome, Safari etc)
 4. snakeyaml = to handle a credential for every environment

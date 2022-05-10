@@ -36,6 +36,14 @@ public abstract class WebBasePageObject {
         return find(locator).getText();
     }
 
+    public String getAttribute(By locator, String attribute) {
+        return find(locator).getAttribute(attribute);
+    }
+
+    public String getTitleTab() {
+        return getDriver().getTitle();
+    }
+
     public WebElement waitElement(By locator, int timeoutInSeconds) {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(timeoutInSeconds));
         return wait.until(ExpectedConditions.presenceOfElementLocated(locator));

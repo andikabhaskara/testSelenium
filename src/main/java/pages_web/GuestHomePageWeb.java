@@ -4,5 +4,4 @@ public interface GuestHomePageWeb {
 
     void openPage();
 
-    void clickLoginButton();
 }

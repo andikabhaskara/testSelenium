@@ -16,11 +16,11 @@ public class WebDriverHook {
 
     @After(value = "@Web")
     public void destroyWebDriverSession(Scenario scenario) {
-        if(scenario.isFailed()) {
+//        if(scenario.isFailed()) {
             TakesScreenshot takesScreenshot = (TakesScreenshot) WebDriverPool.driver;
             byte[] byteImage = takesScreenshot.getScreenshotAs(OutputType.BYTES);
-            scenario.attach(byteImage, "image/jpeg", "failed");
-        }
+            scenario.attach(byteImage, "image/jpeg", "result");
+//        }
 
         WebDriverPool.destroy();
     }

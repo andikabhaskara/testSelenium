@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         publish = true,
         stepNotifications = true,
         plugin = {"pretty", "json:build/cucumber.json", "html:cucumber.html"},
-        tags = "@Udemy"
+        tags = "@Saucedemo"
 )
 public class CucumberRunner {
 }

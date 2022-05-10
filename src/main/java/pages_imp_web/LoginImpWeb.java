@@ -19,11 +19,11 @@ public class LoginImpWeb extends WebBasePageObject implements LoginPageWeb {
 
     @Override
     public String getTitlePage() {
-        return getText(LOGIN_PAGE_TEXT);
+        return getTitleTab();
     }
 
     @Override
-    public void loginToUdemy() {
+    public void loginToWebsite() {
 
         Yaml yaml = new Yaml(new Constructor(UserCredential.class));
         InputStream inputStream = this.getClass()
